@@ -1,0 +1,49 @@
+.navContainer{
+    border:solid black;
+    justify-content: space-between;
+    height:50px;
+    padding-top:8px;
+    padding-left:25px;
+    padding-right:25px;
+}
+.custActions{
+    border:solid blue;
+    display:flex;
+    justify-content: space-between;
+}
+.cust{
+    justify-content: space-between;
+
+}
+.subNav{
+    padding-top:10px;
+    border:solid green;
+    display:flex;
+    justify-content:space-evenly;
+    height:40px;
+}
+.menu{
+    border:solid pink;
+}
+.icon{
+    height:30px;
+    border:solid purple;
+    margin-left:10px;
+}
+.navContainer{
+    display:flex;
+}
+.ckLogo{
+    height:45px;
+}
+.mainImg{
+    padding-top:120px;
+    position:flex;
+    border:solid yellow;
+    background-image: url("https://cdn.shopify.com/s/files/1/0238/7342/1376/files/dessau-home_1512x.png?v=1682708942");
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:500px;
+    text-align:center;
+}
