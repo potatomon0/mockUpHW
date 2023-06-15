@@ -1,11 +1,41 @@
+@keyframes mainImgAni{
+    0%{
+        transform:scale(1.7)
+    }
+}
+@keyframes contactUsAni{
+    100%{
+        transform:scale(1.05);
+        font-size:13px;
+    }
+}
+@keyframes blinkImg{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+body{
+    font-family: Muli, sans-serif;
+}
+.bodyTwo{
+    background-color:black;
+    font-family: Muli, sans-serif;
+}
 .navContainer{
     /* border:solid black; */
     justify-content: space-between;
-    height:50px;
-    padding-top:8px;
+    height:40px;
     padding-left:25px;
     padding-right:25px;
     margin-bottom: 20px;
+}
+.blankSpace{
+    /* border:solid black; */
+    width:600px;
+    height:50px;
 }
 .custActions{
     /* border:solid blue; */
@@ -21,12 +51,9 @@ hr{
     /* border:solid green; */
     display:flex;
     justify-content:space-evenly;
-    height:35px;
+    height:28px;
     border-top:black;
-}
-.menu{
-    /* border:solid pink; */
-    
+    font-size:15px;
 }
 .icon{
     height:30px;
@@ -37,26 +64,41 @@ hr{
     display:flex;
 }
 .ckLogo{
-    height:65px;
+    height:60px;
+}
+.menu{
+    cursor:pointer;
 }
 .mainImg{
-    padding-top:120px;
-    position:flex;
     /* border:solid yellow; */
-    background-image: url("https://cdn.shopify.com/s/files/1/0238/7342/1376/files/dessau-home_1512x.png?v=1682708942");
-    background-size:contain;
-    background-repeat:no-repeat;
-    background-size:cover;
-    height:650px;
     text-align:center;
     color:white;
+    display:flex;
+    overflow:clip;
+    /* max-width:1200px;
+    max-height:700px; */
+    /* height:700px; */
+}
+.mainPic{
+    /* border:solid purple; */
+    /* object-fit:cover;
+    
+    object-position: -20% 0; */height:700px;
+    animation: mainImgAni 3s
 }
 .designer{
-    font-size:20px;
+    font-size:13px;
+    /* border:solid white; */
+    /* text-align:center; */
+    margin-left:210px;
+    font-weight: 220;
+    margin-top:235px;
 }
 .modelName{
+    /* border:solid white; */
     font-size:60px;
-    font-weight: bold;
+    font-weight: 600;
+    margin-left:220px;
 }
 .intro{
     font-size:25px;
@@ -67,19 +109,94 @@ hr{
     font-size:25px;
 }
 .JoinNow{
-    margin-top:20px;
+    /* margin-top:20px; */
     height:50px;
     width:120px;
     background-color: white;
     border:white;
     border-radius: 5px;
     font-size:20px;
+    margin-left:200px;
 }
 .JoinNow:hover{
     background-color: black;
     color:white;
 }
-/* .contactUs{
+.leftArrow,.rightArrow{
+    border:solid red;
+    height:60px;
+    width:30px;
+    margin-top:320px;
+    position:absolute;
+}
+.leftArrow{
+    margin-left:10px;
+    background-image: url("https://www.pngfind.com/pngs/m/517-5173378_arrow-left-gif-white-left-arrow-hd-png.png");
+    background-size:40px 60px;
+}
+.rightArrow{
+    margin-left:900px;
+    background-image: url("https://www.hubpng.com/files/preview/359x585/png-transparent-left-white-arrow-icon-png-hd-11681959917kjw5nb8ohdlg8njpryyukimyxmpxn4fjvvbyawiydzxcjl0xekisbr2bnrrkcf3gtkem6l2dhpwyd2portjgl.png");
+    background-size:40px 60px;
+}
+.mainImgContent{
+    position:absolute;
+}
+.contactUs{
+    border:solid rgb(54, 66, 145);;
+    background-color: rgb(54, 66, 145);;
+    color:white;
+    border-radius:15px 5px 15px 15px;
     position:fixed;
-    margin-right:2px;
-} */
+    margin-left:810px;
+    margin-top:5px;
+    height:25px;
+    width:100px;
+    text-align:center;
+    padding-top:9px;
+    font-size:13px;
+    font-weight:60;
+}
+.contactUs:hover{
+    animation:contactUsAni 1s
+}
+.contactUsBtm{
+    margin-top:705px;
+    border:solid rgb(54, 66, 145);;
+    background-color: rgb(54, 66, 145);;
+    color:white;
+    border-radius:15px 5px 15px 15px;
+    position:fixed;
+    margin-left:810px;
+    height:25px;
+    width:100px;
+    text-align:center;
+    padding-top:9px;
+    font-size:13px;
+    font-weight:600;
+}
+.productPic{
+    height:70px;
+    width:220px;   
+    animation: blinkImg .7s; 
+}
+.sectionContainer{
+    border:solid blue;
+    height:600px;
+    display:grid;
+    grid-template:auto / auto auto auto auto;
+    /* row-gap:20px; */
+    /* column-gap: 10px; */
+    justify-content: space-between;
+}
+.imgTitleDiv{
+    border:solid orange;
+    height:150px;
+    /* margin:10px; */
+    cursor:pointer;
+}
+.pageTitle{
+    border:solid red;
+    text-align: center;
+    margin-top:40px;
+}
